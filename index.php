@@ -10,9 +10,9 @@ $app->get('/', function() {
     
 	$sql = new Hcode\DB\Sql();
 
-	$results = $Sql->select("select * from tb_users");
+	$results = $sql->select("select * from tb_users");
 
-	echo json_encode($resuts);
+	echo json_encode($results);
 });	
 
 $app->run();
